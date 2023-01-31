@@ -1,0 +1,6 @@
+.basket-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
