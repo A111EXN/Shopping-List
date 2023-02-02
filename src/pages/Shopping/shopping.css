@@ -27,6 +27,7 @@
     height: 300px;
     width: 300px;
     border-radius: 16px;
+    text-decoration: none;
     color:var(--white);
     background-color: var(--light-bg);
     font-size: 20px;

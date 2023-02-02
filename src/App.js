@@ -23,6 +23,7 @@ function App() {
           <Route path='/aboutUs' element={<AboutUs/>}/>
           <Route path='/contactUs' element={<ContactUs/>}/>
           <Route path="/auth" element={<Auth/>}/>
+
         </Routes>
     </BrowserRouter>
     </div>
