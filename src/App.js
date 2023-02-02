@@ -4,6 +4,9 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
 import Basket from './pages/Basket/Basket';
 import Shopping from './pages/Shopping/Shopping'
+import AboutUs from './pages/AboutUs/AboutUs';
+import ContactUs from './pages/ContactUs/ContactUs'
+import Auth from './pages/Auth/Auth';
 
 function App() {
 
@@ -17,6 +20,9 @@ function App() {
           <Route path="/" element={<HomePage/>}/>
           <Route path='/basket' element={<Basket/>}/>
           <Route path='/shopping' element={<Shopping/>}/>
+          <Route path='/aboutUs' element={<AboutUs/>}/>
+          <Route path='/contactUs' element={<ContactUs/>}/>
+          <Route path="/auth" element={<Auth/>}/>
         </Routes>
     </BrowserRouter>
     </div>
