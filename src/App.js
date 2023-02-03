@@ -7,6 +7,7 @@ import Shopping from './pages/Shopping/Shopping'
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs'
 import Auth from './pages/Auth/Auth';
+import CategoriesDetails from './pages/CategoriesDetails/CategoriesDetails'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/aboutUs' element={<AboutUs/>}/>
           <Route path='/contactUs' element={<ContactUs/>}/>
           <Route path="/auth" element={<Auth/>}/>
+          <Route path="/categories/:categoryName" element={<CategoriesDetails/>}/>
 
         </Routes>
     </BrowserRouter>

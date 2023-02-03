@@ -32,3 +32,9 @@
     background-color: var(--light-bg);
     font-size: 20px;
 }
+
+.shopping-grid-child img{
+    width: 50px;
+    color:var(--white);
+    margin-bottom: 7px;
+}
