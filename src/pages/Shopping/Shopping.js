@@ -21,11 +21,9 @@ function Shopping() {
     getDocs(q,categoriesRef)
     .then(res=>{
         const categories = res.docs.map(item=>({
-            // id:item.id,
             ...item.data()
         }))
         setShoppingCategories (categories)
-        console.log(categories)
 
     })
     .catch(err=>console.log(err))
@@ -38,7 +36,7 @@ function Shopping() {
         <div className="shopping-grid-parent">
           {
             shoppingCategories?.map(item=>{
-              return <div onClick={()=>navigate(`/categories/${item.name}`)} className='shopping-grid-child'>
+              return <div key={item.name} onClick={()=>navigate(`/categories/${item.name}`)} className='shopping-grid-child'>
                 <img src={item.iconUrl}/>
                 <p>{item.name}</p>
 
