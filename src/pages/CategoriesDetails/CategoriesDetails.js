@@ -8,7 +8,7 @@ import './categoriesDetail.css'
 function CategoriesDetails() {
 
   const {categoryName}=useParams()
-  const [categories,setCategories]=useState('')
+  const [categories,setCategories]=useState([])
 
   useEffect(() => {
     const categoriesRef = collection(db,"produce") 
@@ -26,10 +26,18 @@ function CategoriesDetails() {
   }, [categoryName])
 
   return (
-    <div>
-      <div className='category-title'>{categoryName}</div>  
-      <div>
-      </div>
+    <div className='category-page'>
+      <h1 className='category-title'>{categoryName}</h1>  
+          <div className='category-list-parent'>
+            {
+              categories?.map(item=>{
+                return <div className='category-list-child'>
+                  {item?.foodName}
+                  <button>Add to Basket</button>
+                  </div>
+              })
+            }
+          </div>
     </div>
   )
 }
