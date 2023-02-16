@@ -1,0 +1,29 @@
+.other-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.other-title{
+    margin-bottom: 30px;
+}
+
+.other-text{
+    margin-bottom: 30px;
+}
+
+.other-input{
+    padding: 5px 7px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.other-select{
+    padding: 5px 7px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+}

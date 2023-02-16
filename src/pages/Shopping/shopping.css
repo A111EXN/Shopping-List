@@ -12,6 +12,8 @@
 
 .shopping-grid-parent {
     display: grid;
+    width: 70%;
+
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 10px;
@@ -24,7 +26,6 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    width: 300px;
     border-radius: 16px;
     text-decoration: none;
     color:var(--white);

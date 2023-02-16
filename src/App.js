@@ -8,6 +8,8 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs'
 import Auth from './pages/Auth/Auth';
 import CategoriesDetails from './pages/CategoriesDetails/CategoriesDetails'
+import Other from './pages/Other/Other';
+
 
 function App() {
 
@@ -25,7 +27,7 @@ function App() {
           <Route path='/contactUs' element={<ContactUs/>}/>
           <Route path="/auth" element={<Auth/>}/>
           <Route path="/categories/:categoryName" element={<CategoriesDetails/>}/>
-
+          <Route path='categories/Other' element={<Other/>}/>
         </Routes>
     </BrowserRouter>
     </div>
