@@ -2,6 +2,7 @@ import React from 'react'
 import './other.css'
 
 function Other() {
+
   return (
     <div className='other-page'>
         <h1 className='other-title'>Other</h1>
@@ -16,6 +17,7 @@ function Other() {
             <option>Household</option>
         </select>
         <input className='other-input' type="text" placeholder='Produce Name'></input>
+        <button className='other-button'>Submit</button>
     </div>
   )
 }
