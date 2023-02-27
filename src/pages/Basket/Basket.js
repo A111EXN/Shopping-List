@@ -1,7 +1,8 @@
 import React from 'react'
 import './basket.css'
 
-function Basket() {
+function Basket(foodId) {
+
   return (
     <div className='basket-page'>
       <h1 className='basket-title'>In Your Basket</h1>

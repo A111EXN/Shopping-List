@@ -31,7 +31,7 @@ function CategoriesDetails() {
           <div className='category-list-parent'>
             {
               categories?.map(item=>{
-                return <div className='category-list-child'>
+                return <div className='category-list-child' key={item.id}>
                   {item?.foodName}
                   <button>Add to Basket</button>
                   </div>
